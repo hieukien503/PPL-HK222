@@ -1,0 +1,1 @@
+a_int: integer = 0;
