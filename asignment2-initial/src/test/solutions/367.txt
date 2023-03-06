@@ -1,0 +1,9 @@
+Program([
+	VarDecl(x, IntegerType)
+	VarDecl(y, FloatType)
+	VarDecl(z, BooleanType)
+	FuncDecl(goo, VoidType, [Param(x, IntegerType), Param(y, FloatType)], None, BlockStmt([]))
+	VarDecl(t, ArrayType([10], FloatType))
+	FuncDecl(foo, AutoType, [], None, BlockStmt([]))
+	VarDecl(a, StringType, StringLit(Hello World))
+])

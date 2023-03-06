@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, ArrayType([4], IntegerType))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(i, IntegerType), ForStmt(IntegerLit(0), BinExpr(<, i, IntegerLit(4)), BinExpr(+, i, IntegerLit(1)), BlockStmt([AssignStmt(ArrayCell(a, [i]), BinExpr(*, IntegerLit(3), FuncCall(readInteger, []))), CallStmt(printInteger, ArrayCell(a, [i]))]))]))
+])

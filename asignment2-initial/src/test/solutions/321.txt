@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(perfectNum, BooleanType, [Param(N, IntegerType)], None, BlockStmt([IfStmt(BinExpr(||, BinExpr(||, BinExpr(||, BinExpr(||, BinExpr(==, N, IntegerLit(6)), BinExpr(==, N, IntegerLit(28))), BinExpr(==, N, IntegerLit(496))), BinExpr(==, N, IntegerLit(8128))), BinExpr(==, N, IntegerLit(33550336))), BlockStmt([ReturnStmt(BooleanLit(True))])), ReturnStmt(BooleanLit(True))]))
+])

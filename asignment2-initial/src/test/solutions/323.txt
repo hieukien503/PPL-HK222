@@ -1,0 +1,5 @@
+Program([
+	VarDecl(x, FloatType)
+	FuncDecl(foo, IntegerType, [], None, BlockStmt([ReturnStmt(IntegerLit(0))]))
+	VarDecl(a, IntegerType, IntegerLit(10))
+])

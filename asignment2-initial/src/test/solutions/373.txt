@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo, BooleanType, [], None, BlockStmt([]))
+])

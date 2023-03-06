@@ -1,0 +1,5 @@
+Program([
+	VarDecl(a, ArrayType([2], IntegerType))
+	VarDecl(b, ArrayType([2], IntegerType))
+	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(ArrayCell(a, [IntegerLit(0)]), IntegerLit(2018)), AssignStmt(ArrayCell(a, [IntegerLit(1)]), UnExpr(-, IntegerLit(2018))), AssignStmt(ArrayCell(b, [IntegerLit(0)]), BinExpr(+, ArrayCell(a, [IntegerLit(0)]), ArrayCell(a, [IntegerLit(1)]))), AssignStmt(ArrayCell(b, [IntegerLit(1)]), BinExpr(-, ArrayCell(a, [IntegerLit(0)]), ArrayCell(a, [IntegerLit(1)])))]))
+])

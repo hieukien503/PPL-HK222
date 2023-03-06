@@ -1,0 +1,4 @@
+Program([
+	VarDecl(x, ArrayType([3], FloatType), ArrayLit([FloatLit(1.0), FloatLit(2.0), FloatLit(3.0)]))
+	VarDecl(a, FloatType, BinExpr(+, BinExpr(+, ArrayCell(x, [IntegerLit(0)]), ArrayCell(x, [IntegerLit(1)])), ArrayCell(x, [IntegerLit(2)])))
+])

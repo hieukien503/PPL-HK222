@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo, VoidType, [OutParam(N, IntegerType), Param(i, IntegerType)], None, BlockStmt([VarDecl(j, IntegerType), ForStmt(IntegerLit(0), BinExpr(<, j, i), BinExpr(+, j, IntegerLit(1)), BlockStmt([IfStmt(BinExpr(==, BinExpr(%, N, j), IntegerLit(0)), BlockStmt([AssignStmt(N, BinExpr(-, N, j))]))]))]))
+])
