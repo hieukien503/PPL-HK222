@@ -1,0 +1,1 @@
+foo,:,function,void,(,),{,},fact,:,function,integer,(,),inherit,foo,{,return,0,;,},<EOF>
