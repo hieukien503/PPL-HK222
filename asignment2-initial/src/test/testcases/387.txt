@@ -1,0 +1,8 @@
+foo1: function void (out N: integer, i: integer) {
+            N = N * i;
+        }
+        main: function void() {
+            N: integer = 2018;
+            foo1(N, 3);
+            printInteger(N);
+        }

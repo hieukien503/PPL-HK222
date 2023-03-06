@@ -1,0 +1,7 @@
+perfectNum: function boolean (N: integer) {
+            if ((N == 6) || (N == 28) || (N == 496) || (N == 8128) || (N == 33550336))
+            {
+                return true;
+            }
+            return false;
+        }

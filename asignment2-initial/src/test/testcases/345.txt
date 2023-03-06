@@ -1,0 +1,8 @@
+a_int: integer = 20;
+        foo: function void (out a: integer) {
+            a = a + 10;
+        }
+        main: function void() {
+            foo(a_int);
+            printInteger(a_int);
+        }

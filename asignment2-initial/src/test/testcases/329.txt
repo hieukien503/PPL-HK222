@@ -1,0 +1,9 @@
+goo: function string(a: array [100] of string, N: integer) {
+            i: integer;
+            s: string = "";
+            for (i = 0, i < N, i + 1) {
+                s = s :: a[i];
+            }
+            return s;
+        }
+        main: function void() {}

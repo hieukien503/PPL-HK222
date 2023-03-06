@@ -1,0 +1,8 @@
+a, b: array [2] of integer;
+        main: function void() {
+            a[0] = 2018;
+            a[1] = -2018;
+            b[0] = a[0] + a[1];
+            b[1] = a[0] - a[1];
+        }
+        

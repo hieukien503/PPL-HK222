@@ -1,0 +1,8 @@
+foo1: function void (out s: string, N: integer) {
+            i: integer;
+            for (i = 0, i < N, i + 1) {
+                temp: string = s[N - i - 1];
+                s[N - i - 1] = s[i];
+                s[i] = temp;
+            }
+        }

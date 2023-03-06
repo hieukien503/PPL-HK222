@@ -1,0 +1,5 @@
+foo: function void () {
+            do
+                printInteger(1);
+            while (true);
+        }

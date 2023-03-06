@@ -1,0 +1,1 @@
+x, y, z, t: auto = 2, false, true, 3.75e10;

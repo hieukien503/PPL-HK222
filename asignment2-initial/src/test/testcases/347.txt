@@ -1,0 +1,16 @@
+foo: function auto (a: integer) {
+            if (a > 220) {
+                if (a % 2 == 0)
+                {
+                    return a;
+                }
+                else
+                {
+                    return a + 1;
+                }
+            }
+            else
+            {
+                return a + 10;
+            }
+        }

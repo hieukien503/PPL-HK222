@@ -1,0 +1,8 @@
+main: function void() {
+            i: integer = 0;
+            do
+            {
+                printInteger(i);
+                i = i + 1;
+            } while (true);
+        }

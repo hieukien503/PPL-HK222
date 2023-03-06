@@ -1,0 +1,7 @@
+abc: function auto(a: integer, b: float) {
+            c: auto = 2 * a + b;
+            printInteger(c);
+        }
+        main: function void(a: float) {
+            abc(1, 2.0);
+        }
