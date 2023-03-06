@@ -1,0 +1,5 @@
+x: float;
+        foo: function integer() { 
+            return 0;
+        }
+        a: integer = 10;

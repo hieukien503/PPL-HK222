@@ -1,0 +1,19 @@
+main: function void() {
+            a: array [100] of integer;
+            i, n: integer;
+            do
+            {
+                n = readInteger();
+            } while ((n <= 0) || (n >= 100));
+            for (i = 0, i < n, i + 1) {
+                a[i] = readInteger();
+                if (a[i] % 2 == 0)
+                {
+                    a[i] = a[i] / 2;
+                }
+                else
+                {
+                    a[i] = a[i] * 3 + 1;
+                }
+            }
+        }

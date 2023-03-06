@@ -1,0 +1,5 @@
+foo: function void () {
+            do
+                a: integer;
+            while (true);
+        }

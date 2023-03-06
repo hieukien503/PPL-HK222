@@ -1,0 +1,6 @@
+foo: function void (a: integer, b: integer) {
+            goo: function void() {
+                return;
+            }
+            return;
+        }

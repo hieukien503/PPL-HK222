@@ -1,0 +1,1 @@
+foo: function void() inherit fact { return; }

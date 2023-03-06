@@ -1,0 +1,6 @@
+foo: function void (a: integer, b: integer, c: integer) {
+            printInteger(a + 2 * b + 3 * c);
+        }
+        main: function void() {
+            foo(2, 3, 4);
+        }
