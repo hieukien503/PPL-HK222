@@ -1,0 +1,1 @@
+fact: function float(out a: integer, delta: float) {}
