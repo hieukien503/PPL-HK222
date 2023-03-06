@@ -1,0 +1,9 @@
+main: function void () {
+            a: array [2, 2] of float;
+            i, j: integer;
+            for (i = 0, i < 2, i + 1) {
+                for (j = 0, j < 2, j + 1) {
+                    a[i, j] = readFloat();
+                }
+            }
+        }

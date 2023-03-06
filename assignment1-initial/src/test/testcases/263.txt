@@ -1,0 +1,2 @@
+a: integer = 20;
+                   b: float = a;

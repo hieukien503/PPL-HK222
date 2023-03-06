@@ -1,0 +1,8 @@
+foo2: function void (a: integer) {
+            printString("Test");
+            a = a + 1;
+            printInteger(a);
+        }
+        main: function void() {
+            foo2(10);
+        }

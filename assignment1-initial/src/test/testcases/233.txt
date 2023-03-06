@@ -1,0 +1,2 @@
+a, b: array [5_1, 9_6,78] of integer;
+                   x: float;

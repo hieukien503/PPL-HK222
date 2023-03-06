@@ -1,0 +1,4 @@
+main: function void(){
+            a[0] = foo(2018) + goo(3);
+            return;
+        }

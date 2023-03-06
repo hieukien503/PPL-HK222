@@ -1,0 +1,8 @@
+foo: function void (out N: integer, i: integer) {
+            j: integer;
+            for (j = 0, j < i, j + 1) {
+                if (N % j == 0) {
+                    N = N - j;
+                }
+            }
+        }
