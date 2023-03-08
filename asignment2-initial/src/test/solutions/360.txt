@@ -1,3 +1,0 @@
-Program([
-	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(a, ArrayType([2, 2], FloatType)), VarDecl(i, IntegerType), VarDecl(j, IntegerType), ForStmt(IntegerLit(0), BinExpr(<, i, IntegerLit(2)), BinExpr(+, i, IntegerLit(1)), BlockStmt([ForStmt(IntegerLit(0), BinExpr(<, j, IntegerLit(2)), BinExpr(+, j, IntegerLit(1)), BlockStmt([AssignStmt(ArrayCell(a, [i, j]), FuncCall(readFloat, []))]))])), ForStmt(IntegerLit(0), BinExpr(<, i, IntegerLit(2)), BinExpr(+, i, IntegerLit(1)), BlockStmt([ForStmt(IntegerLit(0), BinExpr(<, j, IntegerLit(2)), BinExpr(+, j, IntegerLit(1)), BlockStmt([CallStmt(printFloat, ArrayCell(a, [i, j]))]))]))]))
-])

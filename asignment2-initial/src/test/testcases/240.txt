@@ -1,2 +1,0 @@
-x: integer = 20;
-        a: auto = x + 3.7;

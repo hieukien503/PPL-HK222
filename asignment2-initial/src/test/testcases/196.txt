@@ -1,1 +1,0 @@
-uwxyz: string = "Test Identifier: \"Success\"";

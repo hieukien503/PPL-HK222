@@ -1,3 +1,0 @@
-Program([
-	VarDecl(a, StringType, StringLit(Hello, World))
-])

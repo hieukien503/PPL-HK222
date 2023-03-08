@@ -1,5 +1,0 @@
-Program([
-	VarDecl(a, ArrayType([51, 96, 78], IntegerType))
-	VarDecl(b, ArrayType([51, 96, 78], IntegerType))
-	VarDecl(x, FloatType)
-])

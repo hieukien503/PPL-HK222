@@ -1,5 +1,0 @@
-Program([
-	VarDecl(a, AutoType, IntegerLit(29))
-	VarDecl(b, AutoType, FloatLit(1.25))
-	VarDecl(c, AutoType, BooleanLit(True))
-])

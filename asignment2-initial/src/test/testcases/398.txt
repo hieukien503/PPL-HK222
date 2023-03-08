@@ -1,3 +1,0 @@
-foo: function string (a: string, b: integer) {
-            return (a :: a[b]);
-        }

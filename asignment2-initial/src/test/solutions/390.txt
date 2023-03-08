@@ -1,3 +1,0 @@
-Program([
-	VarDecl(a, IntegerType, BinExpr(+, FuncCall(foo, [IntegerLit(2018)]), FuncCall(goo, [IntegerLit(2018)])))
-])

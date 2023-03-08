@@ -1,7 +1,0 @@
-Program([
-	VarDecl(x, IntegerType, IntegerLit(65))
-	FuncDecl(y, IntegerType, [Param(x, IntegerType)], None, BlockStmt([ReturnStmt(BinExpr(+, x, IntegerLit(1)))]))
-	VarDecl(z, FloatType, FloatLit(65.20))
-	FuncDecl(t, FloatType, [Param(z, FloatType)], None, BlockStmt([ReturnStmt(BinExpr(*, z, FloatLit(2.0)))]))
-	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(y, IntegerType, FuncCall(y, [x])), VarDecl(t, FloatType, FuncCall(t, [z])), CallStmt(printInteger, y), CallStmt(printFloat, t)]))
-])

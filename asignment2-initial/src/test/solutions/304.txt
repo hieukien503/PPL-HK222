@@ -1,3 +1,0 @@
-Program([
-	VarDecl(a, FloatType, FloatLit(.25e+3))
-])

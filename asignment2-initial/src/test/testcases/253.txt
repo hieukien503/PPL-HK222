@@ -1,6 +1,0 @@
-main: function void(){
-            i: integer = 3;
-            do
-                i = i + 1;
-            return;
-        }

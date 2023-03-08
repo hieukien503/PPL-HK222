@@ -1,3 +1,0 @@
-Program([
-	FuncDecl(foo, BooleanType, [Param(a, BooleanType), OutParam(b, BooleanType)], None, BlockStmt([]))
-])

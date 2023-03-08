@@ -1,1 +1,0 @@
-err: function void(inherit out a: integer, b: array [2] of float) inherit err1 {}

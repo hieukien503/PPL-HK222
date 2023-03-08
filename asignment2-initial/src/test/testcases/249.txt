@@ -1,6 +1,0 @@
-i, j, k: integer = 20, 30, 40, 60;
-        main: function void()
-        {
-            i = j + k;
-            printInteger(i);
-        }

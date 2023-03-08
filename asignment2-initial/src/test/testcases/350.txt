@@ -1,9 +1,0 @@
-i, j: string = "Baba", "Mama";
-        main: function void()
-        {
-            k = j :: i;
-            t = (k :: j) :: i;
-            l = k :: (j :: i);
-            printString(t);
-            printString(l);
-        }

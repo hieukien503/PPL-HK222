@@ -1,2 +1,0 @@
-x: integer = 20;
-        y: integer = 2 * x + 1;

@@ -1,4 +1,0 @@
-foo: function void(out n: integer, delta: integer) {
-            n = n + delta;
-            return;
-        }

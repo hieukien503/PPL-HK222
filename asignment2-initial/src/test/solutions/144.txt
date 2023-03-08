@@ -1,1 +1,0 @@
-Unclosed String: He said: \"What time is it?\" 

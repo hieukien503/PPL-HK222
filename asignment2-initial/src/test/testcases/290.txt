@@ -1,2 +1,0 @@
-a: integer = foo(2018) + goo(2018);
-        }

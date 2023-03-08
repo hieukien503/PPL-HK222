@@ -1,4 +1,0 @@
-foo1: function void (a: integer, b: float) {
-            c: float = a + b;
-            printFloat(c);
-        }

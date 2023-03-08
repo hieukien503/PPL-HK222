@@ -1,5 +1,0 @@
-Program([
-	VarDecl(i, StringType, StringLit(Baba))
-	VarDecl(j, StringType, StringLit(Mama))
-	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(k, BinExpr(::, j, i)), AssignStmt(t, BinExpr(::, BinExpr(::, k, j), i)), AssignStmt(l, BinExpr(::, k, BinExpr(::, j, i))), CallStmt(printString, t), CallStmt(printString, l)]))
-])

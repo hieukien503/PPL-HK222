@@ -1,3 +1,0 @@
-Program([
-	VarDecl(a, BooleanType, BooleanLit(True))
-])

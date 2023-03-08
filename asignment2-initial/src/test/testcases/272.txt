@@ -1,3 +1,0 @@
-foo: function array [3] of integer(a: array [3] of integer) {
-            return a;
-        }

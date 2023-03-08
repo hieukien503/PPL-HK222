@@ -1,3 +1,0 @@
-Program([
-	FuncDecl(foo, IntegerType, [InheritOutParam(a, IntegerType)], foo1, BlockStmt([CallStmt(preventDefault, ), ReturnStmt(BinExpr(+, a, UnExpr(-, IntegerLit(2018))))]))
-])

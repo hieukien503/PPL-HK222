@@ -1,3 +1,0 @@
-foo1: function void(inherit out a: integer) inherit foo {
-            super(x, y, z);
-        }

@@ -1,9 +1,0 @@
-foo: function void () {
-            if (true) {
-                if (!true) {
-                    
-                }
-                else return;
-            }
-            return;
-        }

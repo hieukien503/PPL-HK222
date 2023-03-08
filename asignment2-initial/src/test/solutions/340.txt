@@ -1,4 +1,0 @@
-Program([
-	VarDecl(x, IntegerType, IntegerLit(20))
-	VarDecl(a, AutoType, BinExpr(+, x, FloatLit(3.7)))
-])

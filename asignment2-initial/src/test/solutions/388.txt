@@ -1,3 +1,0 @@
-Program([
-	FuncDecl(foo1, VoidType, [OutParam(s, StringType), Param(N, IntegerType)], None, BlockStmt([VarDecl(i, IntegerType), ForStmt(IntegerLit(0), BinExpr(<, i, N), BinExpr(+, i, IntegerLit(1)), BlockStmt([VarDecl(temp, StringType, ArrayCell(s, [BinExpr(-, BinExpr(-, N, i), IntegerLit(1))])), AssignStmt(ArrayCell(s, [BinExpr(-, BinExpr(-, N, i), IntegerLit(1))]), ArrayCell(s, [i])), AssignStmt(ArrayCell(s, [i]), temp)]))]))
-])

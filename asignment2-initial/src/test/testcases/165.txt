@@ -1,3 +1,0 @@
-main: function void() {
-            a@198: integer = 20;
-        }

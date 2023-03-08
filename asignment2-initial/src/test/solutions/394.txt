@@ -1,4 +1,0 @@
-Program([
-	FuncDecl(foo2, VoidType, [Param(a, IntegerType)], None, BlockStmt([CallStmt(printString, StringLit(Test)), AssignStmt(a, BinExpr(+, a, IntegerLit(1))), CallStmt(printInteger, a)]))
-	FuncDecl(main, VoidType, [], None, BlockStmt([CallStmt(foo2, IntegerLit(10))]))
-])
