@@ -1,0 +1,1 @@
+x: array [3] of boolean;

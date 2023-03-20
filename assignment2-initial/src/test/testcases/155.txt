@@ -1,0 +1,10 @@
+main: function void () {
+            a: integer = 1;
+            do {
+                if (a > 10) {
+                    break;
+                }
+                a = a + 1;
+            }
+            while (true);
+        }
