@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(fact, VoidType, [Param(a, IntegerType)], None, BlockStmt([CallStmt(printInteger, BinExpr(+, Id(a), IntegerLit(2018)))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([CallStmt(fact, IntegerLit(2018))]))
+])

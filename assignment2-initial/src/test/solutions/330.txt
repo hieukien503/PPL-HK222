@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(abc, AutoType, [Param(a, IntegerType), Param(b, FloatType)], None, BlockStmt([VarDecl(c, AutoType, BinExpr(+, BinExpr(*, IntegerLit(2), Id(a)), Id(b))), CallStmt(printInteger, Id(c))]))
+	FuncDecl(main, VoidType, [Param(a, FloatType)], None, BlockStmt([CallStmt(abc, IntegerLit(1), FloatLit(2.0))]))
+])

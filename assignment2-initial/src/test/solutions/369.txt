@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo1, VoidType, [InheritOutParam(a, IntegerType)], foo, BlockStmt([CallStmt(super, Id(x), Id(y), Id(z))]))
+])

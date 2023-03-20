@@ -1,0 +1,6 @@
+Program([
+	VarDecl(x, IntegerType, IntegerLit(2018))
+	FuncDecl(fibo, IntegerType, [Param(n, IntegerType)], None, BlockStmt([IfStmt(BinExpr(<=, Id(n), IntegerLit(1)), ReturnStmt(IntegerLit(1)), ReturnStmt(BinExpr(+, FuncCall(fibo, [BinExpr(-, Id(n), IntegerLit(1))]), FuncCall(fibo, [BinExpr(-, Id(n), IntegerLit(2))]))))]))
+	FuncDecl(decr, VoidType, [OutParam(n, IntegerType), Param(delta, IntegerType)], None, BlockStmt([AssignStmt(Id(n), BinExpr(-, Id(n), Id(delta)))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(delta, IntegerType, FuncCall(fibo, [IntegerLit(100)])), CallStmt(decr, Id(x), Id(delta)), CallStmt(printInteger, Id(x))]))
+])

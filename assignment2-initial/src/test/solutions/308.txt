@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(fibo, IntegerType, [Param(n, IntegerType)], None, BlockStmt([IfStmt(BinExpr(<=, Id(n), IntegerLit(2)), ReturnStmt(IntegerLit(1)), ReturnStmt(BinExpr(+, FuncCall(fibo, [BinExpr(-, Id(n), IntegerLit(1))]), FuncCall(fibo, [BinExpr(-, Id(n), IntegerLit(2))]))))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([CallStmt(printInteger, FuncCall(fibo, [IntegerLit(20)]))]))
+])

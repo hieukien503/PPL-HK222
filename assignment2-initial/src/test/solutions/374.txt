@@ -1,0 +1,6 @@
+Program([
+	VarDecl(x, AutoType, IntegerLit(2))
+	VarDecl(y, AutoType, BooleanLit(False))
+	VarDecl(z, AutoType, BooleanLit(True))
+	VarDecl(t, AutoType, FloatLit(37500000000.0))
+])

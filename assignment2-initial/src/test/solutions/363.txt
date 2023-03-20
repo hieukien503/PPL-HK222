@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, IntegerType, IntegerLit(20))
+	VarDecl(b, FloatType, Id(a))
+])

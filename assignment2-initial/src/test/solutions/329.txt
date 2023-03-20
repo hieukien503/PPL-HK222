@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(goo, StringType, [Param(a, ArrayType([100], StringType)), Param(N, IntegerType)], None, BlockStmt([VarDecl(i, IntegerType), VarDecl(s, StringType, StringLit()), ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), Id(N)), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([AssignStmt(Id(s), BinExpr(::, Id(s), ArrayCell(a, [Id(i)])))])), ReturnStmt(Id(s))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([]))
+])

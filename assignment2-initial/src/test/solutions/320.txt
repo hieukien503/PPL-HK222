@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo, IntegerType, [InheritOutParam(a, IntegerType)], foo1, BlockStmt([CallStmt(preventDefault, ), ReturnStmt(BinExpr(+, Id(a), UnExpr(-, IntegerLit(2018))))]))
+])

@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo, StringType, [Param(a, StringType), Param(b, IntegerType)], None, BlockStmt([ReturnStmt(BinExpr(::, Id(a), ArrayCell(a, [Id(b)])))]))
+])

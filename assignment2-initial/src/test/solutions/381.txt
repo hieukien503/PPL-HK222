@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo, VoidType, [], None, BlockStmt([DoWhileStmt(BooleanLit(True), BlockStmt([CallStmt(printInteger, IntegerLit(1))]))]))
+])

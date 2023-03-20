@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo, ArrayType([3], IntegerType), [Param(a, ArrayType([3], IntegerType))], None, BlockStmt([ReturnStmt(Id(a))]))
+])

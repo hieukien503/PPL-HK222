@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo, VoidType, [], None, BlockStmt([IfStmt(BooleanLit(True), BlockStmt([VarDecl(a, IntegerType, IntegerLit(10)), VarDecl(b, IntegerType, IntegerLit(20)), VarDecl(c, IntegerType, IntegerLit(30)), CallStmt(printInteger, BinExpr(+, BinExpr(+, Id(a), Id(b)), Id(c)))]), BlockStmt([VarDecl(x, FloatType, FloatLit(230.0)), VarDecl(y, FloatType, UnExpr(-, FloatLit(230.0))), CallStmt(printFloat, BinExpr(+, Id(x), Id(y)))]))]))
+])

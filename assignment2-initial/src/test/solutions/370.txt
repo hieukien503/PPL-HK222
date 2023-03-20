@@ -1,0 +1,4 @@
+Program([
+	VarDecl(x, IntegerType, IntegerLit(20))
+	VarDecl(y, IntegerType, BinExpr(+, BinExpr(*, IntegerLit(2), Id(x)), IntegerLit(1)))
+])

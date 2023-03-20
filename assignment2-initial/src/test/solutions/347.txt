@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(foo, AutoType, [Param(a, IntegerType)], None, BlockStmt([IfStmt(BinExpr(>, Id(a), IntegerLit(220)), BlockStmt([IfStmt(BinExpr(==, BinExpr(%, Id(a), IntegerLit(2)), IntegerLit(0)), BlockStmt([ReturnStmt(Id(a))]), BlockStmt([ReturnStmt(BinExpr(+, Id(a), IntegerLit(1)))]))]), BlockStmt([ReturnStmt(BinExpr(+, Id(a), IntegerLit(10)))]))]))
+])

@@ -1,0 +1,4 @@
+Program([
+	VarDecl(x, ArrayType([2, 3], IntegerType), ArrayLit([ArrayLit([IntegerLit(1), IntegerLit(5), IntegerLit(8)]), ArrayLit([IntegerLit(2), IntegerLit(9), IntegerLit(6)])]))
+	VarDecl(a, IntegerType, BinExpr(-, BinExpr(-, BinExpr(-, BinExpr(+, BinExpr(+, ArrayCell(x, [IntegerLit(0), IntegerLit(0)]), ArrayCell(x, [IntegerLit(0), IntegerLit(1)])), ArrayCell(x, [IntegerLit(0), IntegerLit(2)])), ArrayCell(x, [IntegerLit(1), IntegerLit(0)])), ArrayCell(x, [IntegerLit(1), IntegerLit(1)])), ArrayCell(x, [IntegerLit(1), IntegerLit(2)])))
+])
