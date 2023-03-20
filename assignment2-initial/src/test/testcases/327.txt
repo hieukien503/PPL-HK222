@@ -1,0 +1,6 @@
+fact: function void(a: integer) {
+            printInteger(a + 2018);
+        }
+        main: function void() {
+            fact(2018);
+        }

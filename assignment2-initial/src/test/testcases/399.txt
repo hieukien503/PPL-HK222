@@ -1,0 +1,14 @@
+x: integer = 65;
+        y: function integer(x: integer) {
+            return x + 1;
+        }
+        z: float = 65.20;
+        t: function float(z: float) {
+            return z * 2.0;
+        }
+        main: function void() {
+            y: integer = y(x);
+            t: float = t(z);
+            printInteger(y);
+            printFloat(t);
+        }

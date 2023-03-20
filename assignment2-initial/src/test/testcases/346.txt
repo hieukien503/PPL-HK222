@@ -1,0 +1,5 @@
+foo: function array[10] of integer(a: array [10] of integer) {
+            return a;
+        }
+        b: integer = 20;
+        main: function void() { return; }

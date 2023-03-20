@@ -1,0 +1,7 @@
+foo: function void (a: integer, b: integer) {
+            i: integer;
+            for (i = a, i <= b, i + 1) {
+                c: integer = a + i;
+                printInteger(c);
+            }
+        }

@@ -1,0 +1,13 @@
+x: integer = 2018;
+        fact: function integer (n: integer) {
+            if (n == 0) return 1;
+            else return n * fact(n - 1);
+        }
+        decr: function void(out n: integer, delta: integer) {
+            n = n - delta;
+        }
+        main: function void() {
+            delta: integer = fact(3_2);
+            decr(x, delta);
+            printInteger(x);
+        }

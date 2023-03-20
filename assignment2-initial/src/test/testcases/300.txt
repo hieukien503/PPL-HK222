@@ -1,0 +1,6 @@
+i, j, t: string = "20", "30", "40";
+        main: function void()
+        {
+            k = j :: (i :: t);
+            printString(k);
+        }

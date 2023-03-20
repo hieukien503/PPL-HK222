@@ -1,0 +1,2 @@
+a, b: integer = 1, 2;
+        x: float = 9.25;

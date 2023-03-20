@@ -1,0 +1,7 @@
+x: float;
+        foo: function integer() { 
+            return 0;
+        }
+        goo: function void() {
+            i: string;
+        }

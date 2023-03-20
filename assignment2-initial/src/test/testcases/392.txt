@@ -1,0 +1,7 @@
+foo: function boolean (a: integer, b: float) {
+            i: integer;
+            for (i = 0, i < 5, i + 1) {
+                x, y, z: integer = 10, 20, 30;
+                return (x + a + y + b) > (y + a + z + b);
+            }
+        }

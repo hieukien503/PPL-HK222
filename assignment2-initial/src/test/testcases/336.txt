@@ -1,0 +1,8 @@
+a: array [4] of integer;
+        main: function void() {
+            i: integer;
+            for (i = 0, i < 4, i + 1) {
+                a[i] = readInteger();
+                printInteger(a[i]);
+            }
+        }

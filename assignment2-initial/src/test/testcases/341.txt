@@ -1,0 +1,1 @@
+foo: function boolean(a: boolean, out b: boolean) {}

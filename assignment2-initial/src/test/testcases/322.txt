@@ -1,0 +1,9 @@
+foo: function integer (a: integer) {
+            a = a + (-2018);
+            return a;
+        }
+        main: function void() {
+            a: integer = 2018;
+            a = a + foo(a);
+            readInteger(a);
+        }

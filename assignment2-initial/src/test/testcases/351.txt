@@ -1,0 +1,4 @@
+main: function void(){
+            a[3 + 5, 2 * x] = y[4] - 7;
+            return;
+        }

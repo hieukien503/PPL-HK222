@@ -1,0 +1,4 @@
+foo: function void (a: integer, b: integer) {
+            printInteger(a + b);
+            return;
+        }
