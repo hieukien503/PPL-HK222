@@ -1,0 +1,4 @@
+main: function void() {
+            a[0] = b[2, 3] + foo(2) + (b[0, 1] + goo(1));
+            return;
+        }

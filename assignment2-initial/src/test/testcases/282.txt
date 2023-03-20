@@ -1,0 +1,5 @@
+foo: function void () {
+            while (true)
+                abc: float = 20;
+            return;
+        }

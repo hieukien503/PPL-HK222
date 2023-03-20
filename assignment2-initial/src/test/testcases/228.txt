@@ -1,0 +1,7 @@
+goo: function void(a: integer, b: float) {
+            c: auto = a + 2 * b;
+            printInteger(c);
+        }
+        main: function void() {
+            goo(3, 2.7);
+        }

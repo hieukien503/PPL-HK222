@@ -1,0 +1,11 @@
+x: integer;
+        y: float;
+        z: boolean;
+        goo: function void(x: integer, y: float) {
+        
+        }
+        t: array[10] of float;
+        foo: function auto() {
+            
+        }
+        a: string = "Hello World";

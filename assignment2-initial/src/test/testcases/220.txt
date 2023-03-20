@@ -1,0 +1,4 @@
+foo: function integer (inherit out a: integer) inherit foo1 {
+            preventDefault();
+            return a + (-2018);
+        }

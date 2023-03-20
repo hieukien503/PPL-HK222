@@ -1,0 +1,13 @@
+x: integer = 2018;
+        fibo: function integer (n: integer) {
+            if (n <= 1) return 1;
+            else return fibo(n - 1) + fibo(n - 2);
+        }
+        decr: function void(out n: integer, delta: integer) {
+            n = n - delta;
+        }
+        main: function void() {
+            delta: integer = fibo(100);
+            decr(x, delta);
+            printInteger(x);
+        }
