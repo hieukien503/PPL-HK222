@@ -85,7 +85,7 @@ class ASTGeneration(MT22Visitor):
     
     def visitExpression(self, ctx:MT22Parser.ExpressionContext):
         if ctx.CONCAT():
-            op = ctx.CONCAT()
+            op = ctx.CONCAT().getText()
             left = self.visitExpression1(ctx.expression1()[0])
             right = self.visitExpression1(ctx.expression1()[1])
             return BinExpr(op, left, right)
@@ -94,32 +94,32 @@ class ASTGeneration(MT22Visitor):
     
     def visitExpression1(self, ctx:MT22Parser.Expression1Context):
         if ctx.EQ():
-            op = ctx.EQ()
+            op = ctx.EQ().getText()
             left = self.visitExpression2(ctx.expression2()[0])
             right = self.visitExpression2(ctx.expression2()[1])
             return BinExpr(op, left, right)
         elif ctx.NOT_EQ():
-            op = ctx.NOT_EQ()
+            op = ctx.NOT_EQ().getText()
             left = self.visitExpression2(ctx.expression2()[0])
             right = self.visitExpression2(ctx.expression2()[1])
             return BinExpr(op, left, right)
         elif ctx.LT():
-            op = ctx.LT()
+            op = ctx.LT().getText()
             left = self.visitExpression2(ctx.expression2()[0])
             right = self.visitExpression2(ctx.expression2()[1])
             return BinExpr(op, left, right)
         elif ctx.LTE():
-            op = ctx.LTE()
+            op = ctx.LTE().getText()
             left = self.visitExpression2(ctx.expression2()[0])
             right = self.visitExpression2(ctx.expression2()[1])
             return BinExpr(op, left, right)
         elif ctx.GT():
-            op = ctx.GT()
+            op = ctx.GT().getText()
             left = self.visitExpression2(ctx.expression2()[0])
             right = self.visitExpression2(ctx.expression2()[1])
             return BinExpr(op, left, right)
         elif ctx.GTE():
-            op = ctx.GTE()
+            op = ctx.GTE().getText()
             left = self.visitExpression2(ctx.expression2()[0])
             right = self.visitExpression2(ctx.expression2()[1])
             return BinExpr(op, left, right)
@@ -128,12 +128,12 @@ class ASTGeneration(MT22Visitor):
     
     def visitExpression2(self, ctx:MT22Parser.Expression2Context):
         if ctx.AND():
-            op = ctx.AND()
+            op = ctx.AND().getText()
             left = self.visitExpression2(ctx.expression2())
             right = self.visitExpression3(ctx.expression3())
             return BinExpr(op, left, right)
         elif ctx.OR():
-            op = ctx.OR()
+            op = ctx.OR().getText()
             left = self.visitExpression2(ctx.expression2())
             right = self.visitExpression3(ctx.expression3())
             return BinExpr(op, left, right)
@@ -142,12 +142,12 @@ class ASTGeneration(MT22Visitor):
     
     def visitExpression3(self, ctx:MT22Parser.Expression3Context):
         if ctx.ADD():
-            op = ctx.ADD()
+            op = ctx.ADD().getText()
             left = self.visitExpression3(ctx.expression3())
             right = self.visitExpression4(ctx.expression4())
             return BinExpr(op, left, right)
         elif ctx.SUB():
-            op = ctx.SUB()
+            op = ctx.SUB().getText()
             left = self.visitExpression3(ctx.expression3())
             right = self.visitExpression4(ctx.expression4())
             return BinExpr(op, left, right)
@@ -156,17 +156,17 @@ class ASTGeneration(MT22Visitor):
         
     def visitExpression4(self, ctx:MT22Parser.Expression4Context):
         if ctx.MUL():
-            op = ctx.MUL()
+            op = ctx.MUL().getText()
             left = self.visitExpression4(ctx.expression4())
             right = self.visitExpression5(ctx.expression5())
             return BinExpr(op, left, right)
         elif ctx.DIV():
-            op = ctx.DIV()
+            op = ctx.DIV().getText()
             left = self.visitExpression4(ctx.expression4())
             right = self.visitExpression5(ctx.expression5())
             return BinExpr(op, left, right)
         elif ctx.MOD():
-            op = ctx.MOD()
+            op = ctx.MOD().getText()
             left = self.visitExpression4(ctx.expression4())
             right = self.visitExpression5(ctx.expression5())
             return BinExpr(op, left, right)
@@ -175,7 +175,7 @@ class ASTGeneration(MT22Visitor):
     
     def visitExpression5(self, ctx:MT22Parser.Expression5Context):
         if ctx.NEGATION():
-            op = ctx.NEGATION()
+            op = ctx.NEGATION().getText()
             operand = self.visitExpression5(ctx.expression5())
             return UnExpr(op, operand)
         else:
@@ -183,7 +183,7 @@ class ASTGeneration(MT22Visitor):
     
     def visitExpression6(self, ctx:MT22Parser.Expression6Context):
         if ctx.SUB():
-            op = ctx.SUB()
+            op = ctx.SUB().getText()
             operand = self.visitExpression6(ctx.expression6())
             return UnExpr(op, operand)
         else:
