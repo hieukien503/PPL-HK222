@@ -1,4 +1,4 @@
-# This is a place where u can find the code of PPL's assignment (MT22)
+# This is a place where u can find the source code of PPL's assignment (MT22 language)
 ## Total score:
 1. Assignment 1: Lexer (82/100), Parser (92/100) -> 8.7
   - Building Recognizer for MT22 language (based on MT22's specification)
