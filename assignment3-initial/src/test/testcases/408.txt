@@ -1,0 +1,14 @@
+
+        foo: function auto (a: auto, b: integer)
+        {
+            a = a + b;
+            return a;
+        }
+        goo: function void() inherit foo
+        {
+            a: integer = 1;
+            super(1, 2);
+        }
+        main: function void() {
+        
+        }

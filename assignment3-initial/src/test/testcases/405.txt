@@ -1,0 +1,13 @@
+x, y: boolean = true, foo(1, 2);
+        foo: function auto (x: auto, y: integer)
+        {
+            return x == y;
+        }
+        goo: function void(a: auto)
+        {
+            
+        }
+        main: function void() {
+            goo(2018);
+            goo(3.75);
+        }

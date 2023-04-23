@@ -1,0 +1,13 @@
+
+        x: integer = 3;
+        a: integer = readInteger();
+        fact: function integer() 
+        {
+            
+        }
+        foo: function auto () {
+            return a;
+        }
+        main: function void() {
+            x = foo();
+        }

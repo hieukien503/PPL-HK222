@@ -1,0 +1,9 @@
+
+        x: boolean = true;
+        foo: function auto () {
+            return x;
+        }
+        main: function void() {
+            delta: integer = foo();
+            printInteger(delta);
+        }

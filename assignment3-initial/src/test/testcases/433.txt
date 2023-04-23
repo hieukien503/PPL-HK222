@@ -1,0 +1,12 @@
+
+        foo: function integer(a: auto)
+        {
+            if (a < 20)
+            {
+                return 1;
+            }
+            return 2.7;
+        }
+        main: function void () {
+            
+        }

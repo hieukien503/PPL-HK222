@@ -1,0 +1,7 @@
+
+        inc : function void (out n : integer, a: float) inherit foo {} 
+        foo : function auto (inherit n: float, n: integer){} 
+        main: function void()
+        {
+        
+        }

@@ -1,0 +1,6 @@
+a : integer = foo(1, 2);
+        foo : function integer (a : auto, b: auto) {
+            x: auto = a + b;
+            return x;
+        }
+        main: function void() {}

@@ -1,0 +1,7 @@
+
+        fact: function integer (n: integer) {
+            fact(2018);
+        }
+        main: function void() {
+            delta: integer = fact(3);
+        }

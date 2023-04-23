@@ -1,0 +1,5 @@
+
+        a: array [3, 2] of integer = {{1, "2"}, {1, 2}, {1, 2}};
+        main: function void () {
+            
+        }

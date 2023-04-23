@@ -1,0 +1,9 @@
+
+        goo: function void(a: auto, b: auto)
+        {
+            x: string = a + b;
+        }
+        main: function void() {}
+        foo1: function void(inherit out a: integer) inherit foo {
+            super(x, y, z);
+        }

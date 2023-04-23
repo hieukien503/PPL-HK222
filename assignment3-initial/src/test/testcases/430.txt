@@ -1,0 +1,11 @@
+
+        foo: function void (a: auto) inherit goo {
+            preventDefault();
+        }
+        main: function void () {
+            foo(2018);
+            goo(20);
+        }
+        goo: function void (inherit a: integer){                 
+            foo(3);
+        } 

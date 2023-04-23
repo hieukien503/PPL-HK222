@@ -1,0 +1,13 @@
+
+        main: function void() {
+            n: integer = readInteger();
+            if (foo(n))
+            {
+                printInteger(n);
+            }
+            else
+            {
+                printInteger(1 + n);
+            }
+        }
+        foo: function boolean(n: integer) {}

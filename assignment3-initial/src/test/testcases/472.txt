@@ -1,0 +1,13 @@
+
+        a: function integer (a: integer)
+        {
+            if (a <= 1)
+            {
+                return a;
+            }
+            return a(a - 1) + a(a - 2);
+        }
+        main: function void()
+        {
+            printInteger(a(2018));
+        }

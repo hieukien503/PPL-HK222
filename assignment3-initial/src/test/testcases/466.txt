@@ -1,0 +1,2 @@
+a: auto;
+        main: function void() {}

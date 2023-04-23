@@ -1,0 +1,13 @@
+
+        main: function void () {
+            a: integer = foo();//1
+            b: float = "Error";//2
+        }
+        foo: function auto() {
+            c: float = "Error";//3
+            if("Error")//4
+                return 123;//5
+            else
+                return 456;//6
+            return "123"; //7
+        }

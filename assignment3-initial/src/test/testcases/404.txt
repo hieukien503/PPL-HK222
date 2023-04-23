@@ -1,0 +1,12 @@
+
+        foo: function integer (inherit x: integer, y: integer)
+        {
+            
+        }
+        foo1: function integer(z: string) inherit foo
+        {
+            super(x, y);
+        }
+        main: function void() {
+        
+        }

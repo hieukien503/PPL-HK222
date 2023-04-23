@@ -1,0 +1,5 @@
+
+        a: integer = 20;
+        a: function void() {
+            x: integer = 3;
+        }

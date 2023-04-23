@@ -1,0 +1,11 @@
+
+        fact: function integer (n: integer) {
+            if (n <= 1)
+            {
+                return 1;
+            }
+            return fact(n - 1) + fact(n - 2);
+        }
+        main: function void() {
+            delta: integer = fact(3);
+        }

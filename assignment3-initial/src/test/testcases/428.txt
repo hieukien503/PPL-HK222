@@ -1,0 +1,9 @@
+
+        foo : function void (a : auto){}                  // Line 1
+        main : function void () {
+            foo(true);                                    // Line 3
+            goo();                                        // Line 4
+        }
+        goo : function void (){                           // Line 6                    
+            foo(3);                                       // Line 7
+        } 

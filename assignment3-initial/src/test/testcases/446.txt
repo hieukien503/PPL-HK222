@@ -1,0 +1,6 @@
+
+        foo: function auto(a: auto, b: string) inherit bar {
+            super(1, a, bar()); // 1
+        }
+        bar: function auto (x: auto, y: boolean, z: float) {}
+        main: function void() {}

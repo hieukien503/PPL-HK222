@@ -1,0 +1,7 @@
+
+        foo: function auto (b: integer, b: float) { 
+	        return 3;
+	        return "hello";
+	        a: string = 123;
+        }
+        main: function void() {}

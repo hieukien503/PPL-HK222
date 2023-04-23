@@ -1,0 +1,13 @@
+
+        foo: function auto (a: integer) {
+            if (a < 10)
+            {
+                return a;
+            }
+            else
+            {
+                return 3.25;
+            }
+        }
+        main: function void() {}
+        

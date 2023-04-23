@@ -1,0 +1,12 @@
+foo: function void() {
+            if (true)
+            {
+                a, b, c: integer = 10, 20, 30;
+                printInteger(a + b + c);
+            }
+            else
+            {
+                x, y: float = 2.3e2, -2.3e2;
+                printFloat(x + y);
+            }   
+        }

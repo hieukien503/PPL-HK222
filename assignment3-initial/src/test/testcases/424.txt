@@ -1,0 +1,8 @@
+
+        foo: function auto () {
+            return 2018;
+        }
+        main: function void() {
+            delta: integer = foo();
+            printInteger(delta);
+        }

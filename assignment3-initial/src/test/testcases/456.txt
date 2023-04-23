@@ -1,0 +1,9 @@
+foo: function void () inherit bar {
+            if (a < b)
+                if (c < d)
+                    printString("True");
+                else
+                    printString("False");
+        }
+        main: function void() {}
+        bar: integer = 2;

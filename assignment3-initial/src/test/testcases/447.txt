@@ -1,0 +1,11 @@
+
+        foo: integer = 2018;
+        foo1: function auto()
+        {
+            return foo;
+        }
+        main: function void()
+        {
+            foo: auto = foo1();
+            printBoolean(foo);
+        }

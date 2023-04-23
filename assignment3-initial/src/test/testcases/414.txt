@@ -1,0 +1,6 @@
+
+        x: auto = x + 4.7;
+        foo: function void(a: integer) {}
+        main: function void() {
+            foo(x);
+        }

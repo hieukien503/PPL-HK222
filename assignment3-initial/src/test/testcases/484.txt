@@ -1,0 +1,17 @@
+foo: function void () {
+            if (!true) {
+                if (true) {
+                    a: integer = 10;
+                    a = a + 1;
+                    return;
+                }
+                else
+                    return;
+            }
+            else {
+                a: integer = 1;
+                while (a < 20)
+                    a = a + 1;
+                printInteger(a);
+            }
+        }

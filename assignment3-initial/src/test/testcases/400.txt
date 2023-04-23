@@ -1,0 +1,15 @@
+
+        foo1: function void (c: integer) inherit foo
+        {
+            super(b, c);
+        }
+        foo: function void (a: integer, inherit b: auto) {
+        
+        }
+        foo2: function void (x: integer) inherit foo1
+        {
+            super(b);
+        }
+        main: function void() {
+        
+        }

@@ -1,0 +1,5 @@
+foo: function void(b: auto, c: auto)
+        {
+            a: integer = b + c == c;
+        }
+        main: function void() {}

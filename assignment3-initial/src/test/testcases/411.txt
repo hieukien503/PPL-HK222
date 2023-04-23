@@ -1,0 +1,7 @@
+
+        foo: function void() inherit foo1{
+            super("HCMUT", true);
+            x = 7;
+        }
+        foo1: function void (inherit x: string, inherit x: boolean) {}
+        main: function void() {}

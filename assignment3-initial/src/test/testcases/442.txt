@@ -1,0 +1,25 @@
+
+        foo: function boolean (n: integer)
+        {
+            if (n < 2)
+            {
+                return false;
+            }
+            if (n % 2 == 0)
+            {
+                return n == 2;
+            }
+            i: integer;
+            for (i = 2, i * i <= n, 1)
+            {
+                if (n % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        main: function void() {
+            n: integer = readInteger();
+            printBoolean(foo(n));
+        }

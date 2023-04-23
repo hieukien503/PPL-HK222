@@ -1,0 +1,3 @@
+a: integer = foo();
+        foo: function string() { }
+        main: function void() {}

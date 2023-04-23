@@ -1,0 +1,7 @@
+a : integer = foo(1, 2);
+        foo : function float (a : auto, b: auto) {
+            a = "abc";
+            b = "bcd";
+            return a + b;
+        }
+        main: function void() {}

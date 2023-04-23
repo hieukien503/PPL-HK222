@@ -1,0 +1,11 @@
+
+        func1: function auto() inherit foo {
+            super(20);
+            x: integer = 20;
+        }
+        foo: function integer(inherit x: integer) {
+            
+        }
+        main: function void(){
+            a: integer = func1() + 2;
+        }

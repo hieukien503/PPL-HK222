@@ -1,0 +1,7 @@
+
+        foo: function void (b: integer) inherit a {
+            preventDefault();
+        }
+        a: function string (inherit c: string) {}
+        a: integer = 1;
+        main: function void() {}

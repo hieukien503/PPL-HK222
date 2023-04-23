@@ -1,0 +1,13 @@
+
+        foo: function auto (a: auto, b: integer)
+        {
+            a = a + b;
+            return a;
+        }
+        goo: function void()
+        {
+            x: integer = foo(1.7, 2);
+        }
+        main: function void() {
+        
+        }

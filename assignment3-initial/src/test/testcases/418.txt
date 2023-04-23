@@ -1,0 +1,8 @@
+
+        main: function void(){
+            a: integer = func1() + 2.2;
+        }
+        func1: function auto(){
+            return "string";
+        }
+        

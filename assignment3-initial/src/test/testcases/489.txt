@@ -1,0 +1,11 @@
+
+        inc : function void (a : integer) inherit foo{
+            super("aa",2);
+            a = 1::2;
+        }
+        foo : function auto (inherit n: float, inherit n: integer){
+
+        }
+        main: function void() {
+            
+        }

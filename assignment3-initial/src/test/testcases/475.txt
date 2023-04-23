@@ -1,0 +1,8 @@
+
+        func1: function auto (d: integer, c: integer, e: auto) {
+            g: integer = -e;
+            f: integer = e;
+        }
+        main: function void () {
+            a: integer = func1(2, 3, 2.9);
+        }

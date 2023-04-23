@@ -1,0 +1,5 @@
+a,b,c: boolean = true, false, true;
+        main: function void() {
+            a = b && c;
+            printBoolean(a);
+        }

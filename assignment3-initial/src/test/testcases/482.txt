@@ -1,0 +1,8 @@
+foo: function void () {
+            while (true)
+                break;
+            return;
+        }
+        main: function void() {
+            
+        }

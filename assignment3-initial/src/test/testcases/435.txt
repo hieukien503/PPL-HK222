@@ -1,0 +1,19 @@
+
+        foo: function integer(a: auto) inherit foo1
+        {
+            preventDefault();
+            x: integer = 20;
+            if (a < 20)
+            {
+                x: integer = 5;
+                return x;
+            }
+            return x;
+        }
+        foo1: function integer(inherit x: integer)
+        {
+            
+        }
+        main: function void () {
+            
+        }
