@@ -1,0 +1,1 @@
+Type mismatch in statement: CallStmt(goo, FloatLit(3.75))
