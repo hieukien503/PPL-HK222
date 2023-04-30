@@ -697,6 +697,8 @@ class StaticChecker (Visitor, Utils):
             self.stage += 1
 
         safe_param = param
+        if self.stage > 1:
+            param = [[]] + param
         for x in ast.body:
             if x == ast.body[0] and self.stage == 1 and self.func_call is None:
                 if self.parent_func is not None:
@@ -711,7 +713,6 @@ class StaticChecker (Visitor, Utils):
                 if isinstance(x, CallStmt) and (x.name == 'preventDefault' or x.name == 'super'):
                     raise InvalidStatementInFunction(self.pre_func)
             if isinstance(x, VarDecl):
-                param = [[]] + param if self.stage != 1 else param
                 param = self.visit(x, param)
             elif isinstance(x, (ForStmt, DoWhileStmt, WhileStmt)):
                 self.in_loop = self.in_loop + [True]
@@ -1002,7 +1003,7 @@ class StaticChecker (Visitor, Utils):
                                 if len(ast.args) < len(param[-1][x].lst):
                                     raise TypeMismatchInExpression("")
                                 else:
-                                    raise TypeMismatchInExpression(ast.args[len(param[-1][x].lst) - 1])
+                                    raise TypeMismatchInExpression(ast.args[len(param[-1][x].lst)])
                 return param
         else:
             self.func_call = ast.name
