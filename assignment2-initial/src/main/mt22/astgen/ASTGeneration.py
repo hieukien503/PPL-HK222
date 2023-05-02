@@ -218,7 +218,7 @@ class ASTGeneration(MT22Visitor):
                     return FloatLit(float(s))
             return FloatLit(float(ctx.FLOAT_LIT().getText()))
         elif ctx.STR_LIT():
-            return StringLit(ctx.STR_LIT())
+            return StringLit(ctx.STR_LIT().getText())
         else:
             return BooleanLit(False) if ctx.FALSE() else BooleanLit(True)
 
