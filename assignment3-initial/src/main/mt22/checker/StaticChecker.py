@@ -656,8 +656,8 @@ class StaticChecker (Visitor, Utils):
             raise Undeclared(Function(), ast.name)
 
     def visitAssignStmt(self, ast, param):
-        lhs_type = self.visit(ast.lhs, param)
         rhs_type = self.visit(ast.rhs, param)
+        lhs_type = self.visit(ast.lhs, param)
         if isinstance(rhs_type, AutoType):
             for x in range(len(param[-1])):
                 if type(param[-1][x]) is Func and param[-1][x].name == ast.rhs.name:
