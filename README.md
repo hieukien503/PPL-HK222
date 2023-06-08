@@ -4,7 +4,7 @@
   - Building Recognizer for MT22 language (based on MT22's specification)
 2. Assignment 2: (93/96) -> 9.6875
   - Generate AST (Abstract Syntax Tree) based on MT22's parse tree
-3. Assignment 3:
+3. Assignment 3: 93/100 -> 9.3
   - Building Static Checker for MT22 language
-4. Assignment 4:
+4. Assignment 4: 91/100 -> 9.1
   - Finish MT22's compiler
