@@ -6,6 +6,7 @@
 *
 '''
 from abc import ABC, abstractmethod, ABCMeta
+from CodeGenError import *
 
 
 class MachineCode(ABC):
@@ -347,10 +348,11 @@ class MachineCode(ABC):
         pass
 
     @abstractmethod
-    def emitMETHOD(self, lexeme, typ, isStatic):
+    def emitMETHOD(self, lexeme, typ, isStatic, isPublic):
         # lexeme: String
         # typ: String
         # isStaic: Boolean
+        # isPublic: Boolean
         pass
 
     @abstractmethod
@@ -564,7 +566,7 @@ class JasminCode(MachineCode):
         return JasminCode.INDENT + "ior" + JasminCode.END
 
     def emitIREM(self):
-        return JasminCode.INDENT + "rem" + JasminCode.END
+        return JasminCode.INDENT + "irem" + JasminCode.END
 
     def emitIFACMPEQ(self, label):
         # label: Int
@@ -628,7 +630,7 @@ class JasminCode(MachineCode):
 
     def emitGOTO(self, label):
         # label: Int
-        return JasminCode.INDENT + "goto Label" + label + JasminCode.END
+        return JasminCode.INDENT + "goto Label" + str(label) + JasminCode.END
 
     def emitINEG(self):
         return JasminCode.INDENT + "ineg" + JasminCode.END
@@ -663,7 +665,7 @@ class JasminCode(MachineCode):
     def emitMULTIANEWARRAY(self, typ, dimensions):
         # typ: String
         # dimensions: Int
-        return JasminCode.INDENT + "multianewarray " + typ + " " + dimensions + JasminCode.END
+        return JasminCode.INDENT + "multianewarray " + typ + " " + str(dimensions) + JasminCode.END
 
     def emitINVOKESTATIC(self, lexeme, typ):
         # lexeme: String
@@ -715,6 +717,7 @@ class JasminCode(MachineCode):
         # lexeme: String
         # typ: String
         # isStaic: Boolean
+        # isPublic:
         if isStatic:
             return JasminCode.END + ".method public static " + lexeme + typ + JasminCode.END
         else:

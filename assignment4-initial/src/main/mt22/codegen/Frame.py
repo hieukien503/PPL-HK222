@@ -1,11 +1,11 @@
 from Utils import *
+from CodeGenError import *
 
 
 class Frame():
     def __init__(self, name, returnType):
         # name: String
         # returnType: Type
-
         self.name = name
         self.returnType = returnType
         self.currentLabel = 0
@@ -186,6 +186,6 @@ class Frame():
     '''
 
     def getBreakLabel(self):
-        if not brkLabel:
+        if not self.brkLabel:
             raise IllegalRuntimeException("None break label")
         return self.brkLabel[-1]

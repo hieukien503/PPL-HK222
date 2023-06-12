@@ -12,6 +12,9 @@ from MT22Lexer import MT22Lexer
 from MT22Parser import MT22Parser
 from ASTGeneration import ASTGeneration
 from lexererr import *
+from CodeGenerator import CodeGenerator
+from StaticChecker import StaticChecker
+from StaticError import StaticError
 import subprocess
 
 JASMIN_JAR = "./external/jasmin.jar"
@@ -155,7 +158,7 @@ class TestChecker:
         checker = StaticChecker(asttree)
         try:
             res = checker.check()
-            dest.write(str(list(res)))
+            # dest.write(str(list(res)))
         except StaticError as e:
             dest.write(str(e))
         finally:
@@ -190,13 +193,13 @@ class TestCodeGen():
             os.mkdir(path)
         f = open(os.path.join(soldir, str(num) + ".txt"), "w")
         try:
+            # check = StaticChecker(asttree).check()
             codeGen.gen(asttree, path)
 
-            subprocess.call("java  -jar " + JASMIN_JAR + " " + path +
-                            "/MT22Class.j", shell=True, stderr=subprocess.STDOUT)
+            subprocess.call("java  -jar " + JASMIN_JAR + " " + path + "/*.j", shell=True, stderr=subprocess.STDOUT)
 
-            subprocess.run("java -cp ./lib:. MT22Class",
-                           shell=True, stdout=f, timeout=10)
+            cmd = "java -cp ./lib" + os.pathsep + ". MT22Class"
+            subprocess.run(cmd, shell=True, stdout=f, timeout=10)
         except StaticError as e:
             f.write(str(e))
         except subprocess.TimeoutExpired:
