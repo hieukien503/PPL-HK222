@@ -6,5 +6,5 @@
   - Generate AST (Abstract Syntax Tree) based on MT22's parse tree
 3. Assignment 3: 93/100 -> 9.3
   - Building Static Checker for MT22 language
-4. Assignment 4: 91/100 -> 9.1
+4. Assignment 4: 100/100 -> 10
   - Finish MT22's compiler
