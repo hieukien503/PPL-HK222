@@ -50,7 +50,7 @@ def main(argv):
 
 
 def getAndTest(cls):
-    suite = unittest.makeSuite(cls)
+    suite = unittest.TestLoader().loadTestsFromTestCase(cls)
     test(suite)
 
 

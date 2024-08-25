@@ -1,0 +1,13 @@
+
+        main: function void() {
+            i: integer = 0;
+            while(true)
+            {
+                if (i == 20)
+                {
+                    break;
+                }
+                i = i + 1;
+            }
+            printInteger(i);
+        }

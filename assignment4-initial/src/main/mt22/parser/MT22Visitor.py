@@ -1,6 +1,6 @@
-# Generated from main/mt22/parser/MT22.g4 by ANTLR 4.9.2
+# Generated from main/mt22/parser/MT22.g4 by ANTLR 4.13.1
 from antlr4 import *
-if __name__ is not None and "." in __name__:
+if "." in __name__:
     from .MT22Parser import MT22Parser
 else:
     from MT22Parser import MT22Parser
